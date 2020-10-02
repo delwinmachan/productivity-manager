@@ -6,11 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.first
-{
-background-image: url("darkgreenleaves.jpg");
 
-}
 .second
 {
 background-color: white;
@@ -36,15 +32,7 @@ background-color: white;
         font-size: 0px;
     }
     
-   nav img{
-        height: 25rem;
-        border:none;
-        background: none;
-    }
-    
-    nav img:hover{
-        transform: scale(1.2);
-    }
+   
     
     nav ul{
         list-style: none;
@@ -53,10 +41,7 @@ background-color: white;
 
        
     }
-    nav li{
     
-        padding: 2rem;
-    }
 
     nav button{
          border-radius:20%; 
