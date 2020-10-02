@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');/*font-family: 'Ubuntu', sans-serif;*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first
+{
+background-image: url("darkgreenleaves.jpg");
+
+}
+.second
+{
+background-color: white;
+}
+.containerss{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-size: cover;
+   
+
+    }
+    
+   
+    
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 0px;
+    }
+    
+   nav img{
+        height: 25rem;
+        border:none;
+        background: none;
+    }
+    
+    nav img:hover{
+        transform: scale(1.2);
+    }
+    
+    nav ul{
+        list-style: none;
+        display: flex;
+        padding: 1rem;
+
+       
+    }
+    nav li{
+    
+        padding: 2rem;
+    }
+
+    nav button{
+         border-radius:20%; 
+        border: 2px solid black;
+        padding: 1rem 2rem ;
+        background: transparent;
+        color: black;
+        font-size :1.3rem ;
+        outline: none;
+        cursor: pointer;
+        
+    }
+    
+    nav button:hover{
+        transform: scale(1.2);
+        color: white;
+        border-color:white;
+        transition: .1s ease-in-out 0s;
+      
+        background-color:-moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); ;
+    
+    }
+    
+    nav{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+     
+    }
+
+    .usericon,.passwordicon
+    {
+        height: 1.5rem;
+    }
+
+    
+    .first{
+        /* background-color: thistle; */
+        flex: 1 0 auto;
+     
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .label
+    {
+        display: flex;
+        flex:wrap;
+    }
+
+    .input1
+    {
+     width:25vh;
+     padding: 0.7rem 0rem;
+     font-size: 1rem;
+     color: black;
+     border:none;
+     border-bottom: 1px solid black;
+     outline: none;
+    }
+
+    .login-card{
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .login-card h1{
+        font-size: 5rem;
+        color: rgb(35, 117, 60);
+        padding: .5rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        
+    }
+    
+    .text{
+        margin:2rem
+    }
+
+    .login .text
+    {
+        font-size: 1.5rem;
+    }
+    
+    button{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1rem;
+        border-radius: 10%;
+        color: white;
+        background-color:rgb(35, 117, 60);
+        padding: 1rem 3rem;
+        border: none;
+        margin: 3rem;
+        outline: none;
+        /* border-radius: 5rem; */
+   
+    }
+
+    button:hover
+    {
+        background-color: black;
+        transition: .3s ease-in-out 0s;
+    }
+    
+    .input{
+        margin: 0.5rem;
+    }
+
+   
