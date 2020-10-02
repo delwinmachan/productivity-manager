@@ -23,6 +23,16 @@ background-color: white;
    
 
     }
+    .logo
+    {
+        height: 500px;
+        width: 500px;
+        float: left;
+        position: relative;
+        top: -140px;
+        left:-120px;
+       
+    }
     
    
     
