@@ -513,13 +513,22 @@ video {
     .tm-welcome-text { font-size: 1.4rem; }
 
     #tm-video {
-        width: 888px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
+        
     }
 
     .tm-logo-container {
-        height: 160px;
-        width: 250px;
+        height: 120px;
+        width: 120px;
+    }
+    .imglogo
+    {
+       height:320px;
+       width: 309px; 
+       position: relative;
+       top: -130px;
+       left: -118px;
     }
 
     .tm-site-header { padding: 20px; }
