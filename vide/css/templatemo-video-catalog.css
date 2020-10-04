@@ -488,6 +488,7 @@ video {
         background-color: rgba(0,0,0,0.5);
         border-radius: 5px;
         border-top-right-radius: 0;
+        height: 120px !important;
         padding: 10px 15px;
     }
 
@@ -569,3 +570,55 @@ video {
         flex-direction: column;
     }
 }
+ @media(max-width: 770px)
+    {
+        .imglogo{
+            display: none;
+        }
+        .tm-logo-container
+        {
+            display: none;
+        }
+
+    }
+
+    @media(max-width: 650px)
+    {
+        .mob
+        {
+            font-size: 35px !important;
+        }
+        .mo
+        {
+            font-size: 20px !important;
+        }
+        .btn
+        {
+            height: 15px;
+            width: 15px;
+            top:-12px;
+            font-size: 15px 
+            
+                   }
+
+        .bro
+        {
+              position: absolute;
+              top: 5px;
+              left:-2px;  
+
+        }
+    .tm-btn-animate:after
+    {
+        content: '';
+        position: absolute !important;
+        left: 50px !important;
+        top: 30px !important;
+    }
+    .tm-btn-animate:hover:before
+    {
+        top:4px;
+    }
+    
+
+    }
