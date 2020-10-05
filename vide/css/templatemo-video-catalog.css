@@ -633,3 +633,74 @@ video {
     
 
     }
+    @media(max-width: 510px)
+        {
+            .w3-jumbo
+            {
+               height: 20px;
+               font-size:20px !important;
+               word-spacing: 6px !important;
+            }
+
+            .mo
+            {
+                font-size: 12px !important;
+                position: relative;
+                top: -10px;
+            }
+            .btn
+            {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 35px;
+                padding-right:35px; 
+                position: relative;
+                top: -20px;
+            }
+            .bro
+            {
+                font-size: 10px;
+                position: absolute;
+                top: 0px;
+                left: 1px;
+            }
+            .tm-btn-cta:before
+            {
+                font-size: 50%;
+                position: absolute;
+                
+            }
+            .fas
+            {
+                display: none;
+            }
+           .navbar-toggler
+           {
+            height:22px !important;
+            width: 9px;
+
+           }
+           i
+           {
+            font-size: 15px;
+            position: relative;
+            left: -6px;
+            top: -5px;
+           }
+           
+           #tm-video-container
+           {
+            background-color: white;
+           }
+
+
+
+
+        }
+        @media(min-width: 0px)
+        {
+         #tm-video-container
+           {
+            background-color: white;
+           }
+        }
