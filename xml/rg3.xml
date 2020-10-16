@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teacher.xsl"?>
+<SCHOOL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="school.xsd">
+  <TEACHER_DETAILS>
+    <Teacher_ID>100</Teacher_ID>
+    <Teacher_Name>Mr.Prashant</Teacher_Name>
+    <Subject>Computer_Science</Subject>
+    <Class>9</Class>
+    <Salary>50440</Salary>
+  </TEACHER_DETAILS>
+
+<TEACHER_DETAILS>
+    <Teacher_ID>101</Teacher_ID>
+    <Teacher_Name>Miss.Aarti</Teacher_Name>
+    <Subject>Science</Subject>
+    <Class>10</Class>
+    <Salary>78900</Salary>
+  </TEACHER_DETAILS>
+
+<TEACHER_DETAILS>
+    <Teacher_ID>102</Teacher_ID>
+    <Teacher_Name>Mrs.Malini</Teacher_Name>
+    <Subject>Social_Science</Subject>
+    <Class>10</Class>
+    <Salary>98000</Salary>
+  </TEACHER_DETAILS>
+
+<TEACHER_DETAILS>
+    <Teacher_ID>103</Teacher_ID>
+    <Teacher_Name>Mr.Atul</Teacher_Name>
+    <Subject>English</Subject>
+    <Class>8</Class>
+    <Salary>60440</Salary>
+  </TEACHER_DETAILS>
+
+<TEACHER_DETAILS>
+    <Teacher_ID>104</Teacher_ID>
+    <Teacher_Name>Mrs.Revathi</Teacher_Name>
+    <Subject>Sanskrit</Subject>
+    <Class>10</Class>
+    <Salary>99760</Salary>
+  </TEACHER_DETAILS>
+
+</SCHOOL>
+

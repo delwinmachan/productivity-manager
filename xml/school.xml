@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="SCHOOL.xsl"?>
+<School xmlns:xsi="http://www.w3.org/2001/XMLSchem-instance"
+ xsi:noNamespaceSchemaLocation="SCHOOL.xsd">
+<SCHOOL>
+
+<ADMISSION>
+    <name>ADMISSION PROCESS</name>
+<year>2020</year>
+    <description>
+   Take the first step to prepare your child for life. Here is the right place for your children.
+   </description>
+    <APPLICATION>BEGINS : 12-02-2021</APPLICATION>
+</ADMISSION>
+
+<CURRICULUM>
+    <name>THE CURRICULUM</name>
+<year>2020</year>
+    <description>
+   We follow the Thematic or Integrated approach to studying. Introduced in 1995-96, the study is based on themes.
+   </description>
+</CURRICULUM>
+
+<MEDIA>
+    <name>MEDIA CENTER</name>
+<year>2020</year>
+    <description>
+  Read and see articles and video clips on HWS in the media.
+   </description>
+</MEDIA>
+
+<GALLERY>
+    <name>PICTURE GALLERY</name>
+<year>2020</year>
+    <description>
+  School Overview, Cultural Events, Sports, Achievements… Because a picture can convey a thousand words!
+   </description>
+</GALLERY>
+
+</SCHOOL>
+</School>
