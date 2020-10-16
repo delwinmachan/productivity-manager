@@ -14,13 +14,13 @@
                             <th style="text-align:left">EMAIL</th>
                            
                         </tr>
-                        <xsl:for-each select="SCHOOL/TEACHER_DETAILS">
+                        <xsl:for-each select="SCHOOL/rg3_DETAILS">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="Teacher_ID"/>
+                                    <xsl:value-of select="rg3_ID"/>
                                 </td>
                                 <td>
-                                    <xsl:value-of select="Teacher_Name"/>
+                                    <xsl:value-of select="rg3_Name"/>
                                 </td>
                                 <td>
                                     <xsl:value-of select="Subject"/>
