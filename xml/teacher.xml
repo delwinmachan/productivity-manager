@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="teacher.xsl"?>
-<SCHOOL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="school.xsd">
+<?xml-stylesheet type="text/xsl" href="rg3.xsl"?>
+<SCHOOL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rg3.xsd">
   <rg3_DETAILS>
     <rg3_ID>Delwin Thomas</rg3_ID>
     <rg3_Name>9526776443</rg3_Name>
