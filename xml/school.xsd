@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<delwin:schema xmlns:delwin="http://www.w3.org/2001/XMLSchema">
+<delwin:element name="rg3">
+<delwin:complexType>
+<delwin:sequence>
+<delwin:element name="TEACHER_DETAILS" maxOccurs="10">
+<delwin:complexType>
+<delwin:sequence>
+<delwin:element name="rg3_ID" type="delwin:string"></delwin:element>
+<delwin:element name="rg3_Name" type="delwin:integer"></delwin:element>
+<delwin:element name="Subject" type="delwin:string"></delwin:element>
+
+</delwin:sequence>
+</delwin:complexType>
+</delwin:element>
+</delwin:sequence>
+</delwin:complexType>
+</delwin:element>
+</delwin:element>
+<delwin:simpleType name="rg3_Name">
+<delwin:restriction base="delwin:integer">
+
+<delwin:minInclusive value="1000000000"/>
+<delwin:maxinclusive value="9999999999"/>
+
+</delwin:restriction>
+</delwin:simpleType>
+</delwin:schema>
