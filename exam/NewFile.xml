@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exam.xsl"?>
+<company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="exam.xsd">
+  <employee aid="a1">
+    <Emp-name>DELWIN THOMAS</Emp-name>
+    <Emp-age>51</Emp-age>
+    <Emp-salary>100000</Emp-salary>
+    <Emp-emailid>delwintom@gmail.com</Emp-emailid>
+    <Emp-phonenum>9526776443</Emp-phonenum>
+    <Emp-designation>team leader</Emp-designation>
+  </employee>
+   <employee aid="a2">
+    <Emp-name>ashna</Emp-name>
+    <Emp-age>45</Emp-age>
+    <Emp-salary>100900</Emp-salary>
+    <Emp-emailid>ashna@gmail.com</Emp-emailid>
+    <Emp-phonenum>9526776003</Emp-phonenum>
+    <Emp-designation>developer</Emp-designation>
+  </employee>
+  <employee aid="a3">
+    <Emp-name>seban</Emp-name>
+    <Emp-age>20</Emp-age>
+    <Emp-salary>100900</Emp-salary>
+    <Emp-emailid>seban@gmail.com</Emp-emailid>
+    <Emp-phonenum>9526776003</Emp-phonenum>
+    <Emp-designation>developer</Emp-designation>
+  </employee>
+  
+</company>

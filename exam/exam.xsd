@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<element name="company">
+<complexType>
+<sequence>
+<element name="employee" maxOccurs="4">
+<complexType>
+<sequence>
+<element name="Emp-name" type="string"></element>
+<element name="Emp-age" type="integer"></element>
+<element name="Emp-salary">
+<simpleType>
+<restriction base="integer">
+<maxInclusive value="200000"></maxInclusive>
+<minInclusive value="50000"></minInclusive>
+</restriction>
+</simpleType>
+</element>
+<element name="Emp-emailid" type="string"></element>
+<element name="Emp-phonenum" type="integer"></element>
+<element name="Emp-designation" type="string"></element>
+</sequence>
+<attribute name="aid" type="ID" use="required"></attribute>
+</complexType>
+</element>
+</sequence>
+</complexType>
+</element>
+</schema>
