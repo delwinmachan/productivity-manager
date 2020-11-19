@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="icon" type="image/x-icon" href="img/cZZ.png" />
+        <link rel="stylesheet" type="text/css" href="signupStyles.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>Sign up here</h1>
+            <form name="myForm" class="box" onsubmit=" return validate()" action="Login.HTML">
+                <input id="fname" type="text" placeholder="First Name" title="First Name:can contain only alphabets">
+                <input id="lname" type="text" placeholder="Last Name" title="Last Name:can contain only alphabets">
+                <input id="uname" type="text" placeholder="Username" title="Username:can contain only alphanuneric characters">
+                <input id="email" type="text" placeholder="Email ID" name="email" title="Email ID:write valid email address">
+                <input id="pwd" type="password" placeholder="Password" title="PASSWORD SHOULD CONTAIN: atleast 8 characters, one lowercase letter, one uppercase letter, one numeric digit, one special character" >
+                <input type="submit" value="Submit" >
+                <a href="Login.HTML" class="extra">Back to Login page</a>
+            </form>
+        </div>
+        <script>
+            function validate()
+            {
+                var restrictions = /^[0-9!@#\$%\^\&*\)\(+=._-]+$/g;
+                var unamereq = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
+                var mailformat = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+                var paswd=  /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{7,15}$/;
+                let fname=document.getElementById("fname");
+                let lname=document.getElementById("lname");
+                let email=document.getElementById("email");
+                let uname=document.getElementById("uname");
+                let pwd=document.getElementById("pwd");
+                if(fname.value.trim()=="")
+               {
+                   alert("First name is required");
+                   return(false);
+               } 
+               else if(fname.value.match(restrictions))
+               {
+                   alert("First name should only contains alphabets");
+                   return(false);
+               }
+               else if(lname.value.trim()=="")
+               {
+                   alert("Last name is required");
+                   return(false);
+               }
+               else if(lname.value.match(restrictions))
+               {
+                   alert("Last name should only contains alphabets");
+                   return(false);
+               }
+               else if(uname.value.trim()=="")
+               {
+                   alert("Username is required");
+                   return(false);
+               }
+               else if (uname.value.match(unamereq))
+               {
+                   alert("Username should only contain alphanuneric characters");
+                   return(false);
+               }
+               else if(email.value.trim()=="")
+               {
+                   alert("Email is required");
+                   return(false);
+               }
+               else if(!email.value.match(mailformat))
+               {
+                   alert("Invalid Email!");
+                   return(false);
+               }
+               else if(pwd.value.trim()=="")
+               {
+                    alert("Password is required");
+                   return(false);
+               }
+               else if(!pwd.value.match(paswd))
+               {
+                   alert("Invalid password!");
+                   return(false);
+               }
+               else
+               {
+                   true;
+               }
+
+            }
+        </script>
+    </body>
+</html>
