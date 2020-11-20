@@ -18,7 +18,7 @@ th,td {
 <p>Click on a track to get details of Songs you like</p>
 <p id='showtrc'></p>
 <table id="demo"></table>
-<select style="float: left;" id="dem" onchange="show()">
+<select id="dem" onchange="show()">
         <option value="Select Color">Select Color</option>
         <option value="yellow">Yellow</option>
         <option value="pink">Pink</option>
@@ -59,7 +59,7 @@ function displaytrack(i) {
             if(value!="Select Color")
             {
                 document.bgColor=value;
-                document.cookie="color="+value+";expires=Fri,1 Aug 2023 01:00:00 UTC;";
+                document.cookie="color="+value+";expires=Fri,1 Aug 1970 01:00:00 UTC;";
             }
         }
         window.onload=function()
