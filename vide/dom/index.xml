@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <musics>
 <music mid="M1">
-<song>TREMOR</song>
-<artist>R3HAB</artist>
+<song>Lovely</song>
+<artist>Billie</artist>
 <size>6</size>
 <price>150</price>
-<download>tremorymp3</download>
-<link>
+<download>Lovelymp3</download>
 </music>
 <music mid="M2">
-<song>king</song>
-<artist>elle king</artist>
+<song>Erase you</song>
+<artist>Catrien Maxwell</artist>
 <size>5</size>
 <price>165</price>
-<download>king.mp3</download>
+<download>EraseYoump3</download>
 </music>
 <music mid="M3">
-<song>outlaw</song>
-<artist>Elle King</artist>
+<song>Savage Love</song>
+<artist>Jason Derulo</artist>
 <size>5</size>
 <price>210</price>
-<download>outlaw.mp3</download>
+<download>SavageLovemp3</download>
 </music>
 <music mid="M4">
-<song>hall of fame</song>
+<song>You Broke Me First</song>
 <artist>Tate MCRae</artist>
 <size>7</size>
 <price>196</price>
-<download>halloffame.mp3</download>
+<download>YouBrokeMeFirstmp3</download>
 </music>
 <music mid="M5">
 <song>Rockstar</song>
-<artist>postmalone</artist>
+<artist>DaBaby</artist>
 <size>7</size>
 <price>130</price>
 <download>Rockstarmp3</download>
