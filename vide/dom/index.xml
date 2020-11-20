@@ -2,20 +2,20 @@
 <musics>
 <music mid="M1">
 <song>TREMOR</song>
-<artist>Billie</artist>
+<artist>GARIX</artist>
 <size>6</size>
 <price>150</price>
-<download>Lovelymp3</download>
+<download>tremormp3</download>
 </music>
 <music mid="M2">
-<song>Erase you</song>
-<artist>Catrien Maxwell</artist>
+<song>outlaw</song>
+<artist>elle king</artist>
 <size>5</size>
 <price>165</price>
-<download>EraseYoump3</download>
+<download>outlawmp3</download>
 </music>
 <music mid="M3">
-<song>Savage Love</song>
+<song>savagelov</song>
 <artist>Jason Derulo</artist>
 <size>5</size>
 <price>210</price>
@@ -30,7 +30,7 @@
 </music>
 <music mid="M5">
 <song>Rockstar</song>
-<artist>DaBaby</artist>
+<artist>postmalone</artist>
 <size>7</size>
 <price>130</price>
 <download>Rockstarmp3</download>
