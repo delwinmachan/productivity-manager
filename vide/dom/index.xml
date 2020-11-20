@@ -6,6 +6,7 @@
 <size>6</size>
 <price>150</price>
 <download>tremormp3</download>
+<link>https://www.youtube.com/watch?v=9vMh9f41pqE</link>
 </music>
 <music mid="M2">
 <song>outlaw</song>
@@ -13,6 +14,7 @@
 <size>5</size>
 <price>165</price>
 <download>outlawmp3</download>
+<link>https://www.youtube.com/watch?v=9vMh9f41pqE</link>
 </music>
 <music mid="M3">
 <song>savagelov</song>
@@ -20,6 +22,7 @@
 <size>5</size>
 <price>210</price>
 <download>SavageLovemp3</download>
+<link>https://www.youtube.com/watch?v=9vMh9f41pqE</link>
 </music>
 <music mid="M4">
 <song>You Broke Me First</song>
@@ -27,6 +30,7 @@
 <size>7</size>
 <price>196</price>
 <download>YouBrokeMeFirstmp3</download>
+<link>https://www.youtube.com/watch?v=9vMh9f41pqE</link>
 </music>
 <music mid="M5">
 <song>Rockstar</song>
@@ -34,5 +38,6 @@
 <size>7</size>
 <price>130</price>
 <download>Rockstarmp3</download>
+<link>https://www.youtube.com/watch?v=9vMh9f41pqE</link>
 </music>
 </musics>
