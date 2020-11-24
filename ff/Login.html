@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="img/cZZ.png" />
+        <link rel="stylesheet" type="text/css" href="loginStyles.css">
+    </head>
+    <body>
+        
+        <form class="box" onsubmit=" return validate()" action="Login.html" >
+            <h1 class="head">Login</h1>
+            <input id="uname" type="text" name="" placeholder="Username" title="Username">
+            <label id="lbun" style="color: rgb(202, 26, 26); visibility: hidden;">User Name is required</label>
+            <input id="pass" type="password" name="" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <label id="lbps" style="color: rgb(202, 26, 26); visibility: hidden;">Password is required</label>
+            <center>
+            <label class="custom-checkbox">Remember me
+                <input type="checkbox" id="RememberMe">
+                <span class="checkmark"></span>
+            </label>
+            </center>
+            <input type="submit" name="" value="Login">
+            <a href="signup.html" class="extra">Sign Up</a> &nbsp;
+            <a href="#" class="extra1">|</a> &nbsp;
+            <a href="#" class="extra">Forgot Password?</a>
+        </form>
+        <script>
+            window.onload = function ()
+            {
+                if (document.cookie.length != 0) 
+                {
+                    document.getElementById("RememberMe").checked=true;
+
+                    var AllCookies, Temp;
+                    AllCookies = document.cookie.split(';');
+                    for (var i=0; i < AllCookies.length; i++) 
+                    {
+                        // alert(AllCookies[i]);
+                        Temp = AllCookies[i].split('=');
+                        // alert(Temp);
+                        if (Temp[0] == "uname")
+                        {
+                            document.getElementById("uname").value = Temp[1];
+                        }
+                        if(Temp[0] == "pass")
+                        {   
+                            document.getElementById("pass").value = Temp[1];
+                        }
+                    }
+
+                }
+            }
+            function validate()
+            {
+                let username=document.getElementById("uname");
+                let password=document.getElementById("pass");
+                if(username.value.trim()=="")
+                {
+                    document.getElementById("lbun").style.visibility="visible";
+                    return false;
+                }
+                else if(password.value.trim()=="")
+                {
+                    document.getElementById("lbps").style.visibility="visible";
+                    return false;
+                }
+                else if(password.value.trim().length<8)
+                {
+                    alert("Password is too short");
+                    return false;
+                }
+                else
+                {
+                    alert("Login Successfull.");
+                    if(document.getElementById("RememberMe").checked==true)
+                    {
+                        CookieGenerate();
+                    }
+                    window.location.replace("index.html");
+                }
+            }
+            function CookieGenerate() 
+            {
+                document.cookie="uname="+document.getElementById("uname").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
+                document.cookie="pass="+document.getElementById("pass").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
+                window.location.replace("index.html");
+            }
+
+        </script>
+    </body>
+</html>
