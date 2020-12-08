@@ -1,91 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
-        <title>Sign Up</title>
+        <meta charset="utf-8">
+        <title>Login</title>
         <link rel="icon" type="image/x-icon" href="img/cZZ.png" />
-        <link rel="stylesheet" type="text/css" href="signupStyles.css">
+        <link rel="stylesheet" type="text/css" href="loginStyles.css">
     </head>
     <body>
-        <div class="wrap">
-            <h1>Sign up here</h1>
-            <form name="myForm" class="box" onsubmit=" return validate()" action="index.HTML">
-                <input id="fname" type="text" placeholder="First Name" title="First Name:can contain only alphabets">
-                <input id="lname" type="text" placeholder="Last Name" title="Last Name:can contain only alphabets">
-                <input id="uname" type="text" placeholder="Username" title="Username:can contain only alphanuneric characters">
-                <input id="email" type="text" placeholder="Email ID" name="email" title="Email ID:write valid email address">
-                <input id="pwd" type="password" placeholder="Password" title="PASSWORD SHOULD CONTAIN: atleast 8 characters, one lowercase letter, one uppercase letter, one numeric digit, one special character" >
-                <input type="submit" value="Submit" >
-                <a href="Login.HTML" class="extra">Back to Login page</a>
-            </form>
-        </div>
+        
+        <form class="box" onsubmit=" return validate()" action="gym/index.html" >
+            <h1 class="head">Login</h1>
+            <input id="uname" type="text" name="" placeholder="Username" title="Username">
+            <label id="lbun" style="color: rgb(202, 26, 26); visibility: hidden;">User Name is required</label>
+            <input id="pass" type="password" name="" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <label id="lbps" style="color: rgb(202, 26, 26); visibility: hidden;">Password is required</label>
+            <center>
+            <label class="custom-checkbox">Remember me
+                <input type="checkbox" id="RememberMe">
+                <span class="checkmark"></span>
+            </label>
+            </center>
+            <input type="submit" name="" value="Login">
+            <a href="signup.html" class="extra">Sign Up</a> &nbsp;
+            <a href="#" class="extra1">|</a> &nbsp;
+            <a href="#" class="extra">Forgot Password?</a>
+        </form>
         <script>
+            window.onload = function ()
+            {
+                if (document.cookie.length != 0) 
+                {
+                    document.getElementById("RememberMe").checked=true;
+
+                    var AllCookies, Temp;
+                    AllCookies = document.cookie.split(';');
+                    for (var i=0; i < AllCookies.length; i++) 
+                    {
+                        // alert(AllCookies[i]);
+                        Temp = AllCookies[i].split('=');
+                        // alert(Temp);
+                        if (Temp[0] == "uname")
+                        {
+                            document.getElementById("uname").value = Temp[1];
+                        }
+                        if(Temp[0] == "pass")
+                        {   
+                            document.getElementById("pass").value = Temp[1];
+                        }
+                    }
+
+                }
+            }
             function validate()
             {
-                var restrictions = /^[0-9!@#\$%\^\&*\)\(+=._-]+$/g;
-                var unamereq = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
-                var mailformat = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
-                var paswd=  /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{7,15}$/;
-                let fname=document.getElementById("fname");
-                let lname=document.getElementById("lname");
-                let email=document.getElementById("email");
-                let uname=document.getElementById("uname");
-                let pwd=document.getElementById("pwd");
-                if(fname.value.trim()=="")
-               {
-                   alert("First name is required");
-                   return(false);
-               } 
-               else if(fname.value.match(restrictions))
-               {
-                   alert("First name should only contains alphabets");
-                   return(false);
-               }
-               else if(lname.value.trim()=="")
-               {
-                   alert("Last name is required");
-                   return(false);
-               }
-               else if(lname.value.match(restrictions))
-               {
-                   alert("Last name should only contains alphabets");
-                   return(false);
-               }
-               else if(uname.value.trim()=="")
-               {
-                   alert("Username is required");
-                   return(false);
-               }
-               else if (uname.value.match(unamereq))
-               {
-                   alert("Username should only contain alphanuneric characters");
-                   return(false);
-               }
-               else if(email.value.trim()=="")
-               {
-                   alert("Email is required");
-                   return(false);
-               }
-               else if(!email.value.match(mailformat))
-               {
-                   alert("Invalid Email!");
-                   return(false);
-               }
-               else if(pwd.value.trim()=="")
-               {
-                    alert("Password is required");
-                   return(false);
-               }
-               else if(!pwd.value.match(paswd))
-               {
-                   alert("Invalid password!");
-                   return(false);
-               }
-               else
-               {
-                   true;
-               }
-
+                let username=document.getElementById("uname");
+                let password=document.getElementById("pass");
+                if(username.value.trim()=="")
+                {
+                    document.getElementById("lbun").style.visibility="visible";
+                    return false;
+                }
+                else if(password.value.trim()=="")
+                {
+                    document.getElementById("lbps").style.visibility="visible";
+                    return false;
+                }
+                else if(password.value.trim().length<8)
+                {
+                    alert("Password is too short");
+                    return false;
+                }
+                else
+                {
+                    alert("Login Successfull.");
+                    if(document.getElementById("RememberMe").checked==true)
+                    {
+                        CookieGenerate();
+                    }
+                    window.location.replace("index.html");
+                }
             }
+            function CookieGenerate() 
+            {
+                document.cookie="uname="+document.getElementById("uname").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
+                document.cookie="pass="+document.getElementById("pass").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
+                window.location.replace("index.html");
+            }
+
         </script>
     </body>
 </html>

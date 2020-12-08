@@ -1,0 +1,16 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellow;
+    background-size: 1600px;
+    
+    background-size: cover;
+}
+td   table,th,td
+{
+border:1px solid black;
+
+}
+th,td{
+
+   padding: 5px;
+}

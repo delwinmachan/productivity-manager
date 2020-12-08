@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="course.js"></script>
+    <link href="filter.css" rel="stylesheet">
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+   <h3>ADD YOUR DESIRED WORKOUT TO CART</h3>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            
+            
+            <th>PROGRAM</th>
+            <th>PRICE</th>
+            <th>NUMBER OF SLOTS</th>
+            <th>OPTIONS</th>
+        </tr>
+        <tr ng-repeat="course in listCourses">
+            
+           
+            <td>{{course.name}}</td>
+            <td>{{course.price | currency:"&#8377;":0}}</td>
+            <td>{{course.hours}}</td>
+            <td>
+                <a href="#" ng-click="delete()">Delete</a> |
+                <a href="#" ng-click="edit(course.id)">Edit</a>
+            </td>
+        </tr>
+    </table>
+    <h3>ADD MORE</h3>
+   
+    <table cellpadding="2" cellspacing="2">
+        
+        <tr>
+            <td>PROGRAM</td>
+            <td><input type="text" ng-model="name"></td>
+        </tr>
+        <tr>
+            <td>PRICE</td>
+            <td><input type="text" ng-model="price"></td>
+        </tr>
+        <tr>
+            <td>NUMBER OF SLOTS</td>
+            <td><input type="text" ng-model="hours"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="button" value="ADD" ng-click="add()">
+            <input type="button" value="SAVE" ng-click="save()"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
