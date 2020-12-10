@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Jane Eyre",
+      "author" : "Charlotte Bronte",
+      "detail": {
+        "release": [" ", "October 1847"],
+        "type": ["Novel"]
+      }
+    },
+    {
+      "name": "Bird Box",
+      "author" : "Josh Malerman",
+      "detail": {
+        "release": [" ","March 2014"],
+        "type": ["Thriller"]
+      }
+    },
+    {
+      "name": "The hunger games",
+      "author" : "Suzanne Collins",
+      "detail": {
+        "release": [" ","september 2008"],
+        "type": ["Action Fiction"]
+      }
+    }
+  ]

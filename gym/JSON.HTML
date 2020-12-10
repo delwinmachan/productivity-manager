@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Kabuki Kitchen</title>
+
+    <style>
+        body{
+            background:linear-gradient(red 10%, tan 10%);
+        }
+    </style>
+
+</head>
+<body>
+	<header>
+		<div style="font-size: 25px;">
+			Kabuki Kitchen
+		</div>
+		</header>
+		
+	<h1>
+		Meal Combo
+	</h1>
+	<br>
+	<table>
+		<tr>
+			<th>CARBS</th>
+			<th>STATUS</th>
+		</tr>
+		<tr>
+			<td>Quinoa</td>
+			<td>Available</td>
+		</tr>
+		<tr>
+			<td>Potato</td>
+			<td>Available</td>
+		</tr>
+		<tr>
+			<td>Rice</td>
+			<td>Available</td>
+		</tr>
+		<tr>
+			<td>Oatmeal</td>
+			<td>Available</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<button class="butt" onclick = "GFG_FUN()"> 
+        Potato
+    </button> 
+    
+    <br><br> 
+    
+    <table id="table"></table> 
+
+	<script>
+		var el_up = document.getElementById("GFG_UP"); 
+        
+        var list = [ 
+            {"Carbs":"Boiled Potato", "Protein":"Steak", "Veggies":"Braised Carrots"}, 
+            {"Carbs":"Roasted Potato", "Protein":"Chicken", "Veggies":"Baked Beans"}, 
+            {"Carbs":"Broiled Potato", "Protein":"Fish", "Veggies":"Roasted Tomato"} 
+        ]; 
+
+		 function GFG_FUN()
+		  { 
+            var cols = []; 
+            
+            for (var i = 0; i < list.length; i++) { 
+                for (var k in list[i]) { 
+                    if (cols.indexOf(k) === -1) { 
+                        
+                        cols.push(k); 
+                    } 
+                } 
+            } 
+
+            var table = document.createElement("table"); 
+
+            var tr = table.insertRow(-1); 
+            
+            for (var i = 0; i < cols.length; i++) { 
+
+                var theader = document.createElement("th"); 
+                theader.innerHTML = cols[i]; 
+
+                tr.appendChild(theader); 
+            } 
+
+            for (var i = 0; i < list.length; i++) { 
+
+                trow = table.insertRow(-1); 
+                for (var j = 0; j < cols.length; j++) { 
+                    var cell = trow.insertCell(-1); 
+ 
+                    cell.innerHTML = list[i][cols[j]]; 
+                } 
+            } 
+
+            var el = document.getElementById("table"); 
+            el.innerHTML = ""; 
+            el.appendChild(table); 
+        }    
+	</script>
+
+	
+</body>
+</html>
