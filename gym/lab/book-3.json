@@ -1,26 +1,26 @@
 [
     {
-      "name": "Game of thrones",
-      "author" : "George R.R.Martin",
+      "name": "tredmill workout",
+      "author" : "J.R.R.JACKY",
       "detail": {
-        "release": [" ","August 1996"],
-        "type": ["Epic Fantasy"]
+        "release": [" ","July 10th"],
+        "type": ["100$ permonth"]
       }
     },
     {
-      "name": "Clash of the Titans",
-      "author" : "Alan Dean Foster",
+      "name": "zumba workout",
+      "author" : "Robin kusher",
       "detail": {
-        "release": [" ", "July 1981"],
-        "type": ["Action/Fantasy"]
+        "release": [" ","April 7th"],
+        "type": ["67$ permonth"]
       }
     },
     {
-      "name": "Dune",
-      "author" : "Frank Herbert",
+      "name": "casual workout",
+      "author" : "Nicolas Sparks",
       "detail": {
-        "release": [" ","August 1965"],
-        "type": ["Science Fiction"]
+        "release": [" ","October 5th"],
+        "type": ["23$ per  month"]
       }
     }
   ]

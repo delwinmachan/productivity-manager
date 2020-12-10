@@ -1,26 +1,26 @@
 [
     {
-      "name": "Jane Eyre",
-      "author" : "Charlotte Bronte",
+      "name": "rope climbing ",
+      "author" : "J.R.R.JACKY",
       "detail": {
-        "release": [" ", "October 1847"],
-        "type": ["Novel"]
+        "release": [" ","July 10th"],
+        "type": ["100$ permonth"]
       }
     },
     {
-      "name": "Bird Box",
-      "author" : "Josh Malerman",
+      "name": "zumba workout",
+      "author" : "Robin kusher",
       "detail": {
-        "release": [" ","March 2014"],
-        "type": ["Thriller"]
+        "release": [" ","April 7th"],
+        "type": ["67$ permonth"]
       }
     },
     {
-      "name": "The hunger games",
-      "author" : "Suzanne Collins",
+      "name": "casual workout",
+      "author" : "Nicolas Sparks",
       "detail": {
-        "release": [" ","september 2008"],
-        "type": ["Action Fiction"]
+        "release": [" ","October 5th"],
+        "type": ["23$ per  month"]
       }
     }
   ]

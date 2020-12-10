@@ -30,17 +30,17 @@ function renderHTML(data) {
   var htmlString = "";
 
   for (i = 0; i < data.length; i++) {
-    htmlString += "<p>" + data[i].name + " --written by-- " + data[i].author + " ";
+    htmlString += "<p>" + data[i].name + " --trained by-- " + data[i].author + " ";
     
     for (ii = 0; ii < data[i].detail.release.length; ii++) {
       if (ii == 0) {
         htmlString += data[i].detail.release[ii];
       } else {
-        htmlString += " --Released on-- " + data[i].detail.release[ii];
+        htmlString += " --starting on-- " + data[i].detail.release[ii];
       }
     }
 
-    htmlString += ' ---type.--- ';
+    htmlString += ' ---prize.--- ';
 
     for (ii = 0; ii < data[i].detail.type.length; ii++) {
       if (ii == 0) {
