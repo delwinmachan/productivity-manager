@@ -1,0 +1,26 @@
+[
+    {
+      "name": "rope climbing ",
+      "trainer" : "J.R.R.JACKY",
+      "detail": {
+        "start": [" ","July 10th"],
+        "prize": ["100$ permonth"]
+      }
+    },
+    {
+      "name": "zumba workout",
+      "trainer" : "Robin kusher",
+      "detail": {
+        "start": [" ","April 7th"],
+        "prize": ["67$ permonth"]
+      }
+    },
+    {
+      "name": "casual workout",
+      "trainer" : "Nicolas Sparks",
+      "detail": {
+        "start": [" ","October 5th"],
+        "prize": ["23$ per  month"]
+      }
+    }
+  ]
