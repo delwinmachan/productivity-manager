@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xml practise
+	</title>
+</head>
+<body>
+<table id='prac'>
+	<tr>
+	<th>author</th>
+	<th>title </th>
+	<th>genre</th>
+	<th>prize</th>
+	<th>date</th></tr>
+</table>
+</body>
+<script >
+	let xmlcontent="";
+	let tableBooks=document.getElementById('prac'); 
+	fetch('books.xml').then((response)  =>{
+		response.text().then((xml)=>{
+			xmlcontent=xml;
+			let parser = new DOMParser;
+			let xmlDOM=parser.parseFromString(xmlcontent,'application/xml')
+			let books=xmlDOM.querySelectorAll('books')
+			books.forEach(bookXmlNode=>{
+
+				let row=document.createElement('tr');
+				let td=document.createElement('td');
+				td.innerText=bookXmlNode.children[0].innerHTML;
+				row.appendChild(td);
+				td=document.createElement('td');
+				td.innerText=bookXmlNode.children[1].innerHTML;
+				row.appendChild(td);
+				td=document.createElement('td');
+				td.innerText=bookXmlNode.children[2].innerHTML;
+				row.appendChild(td);
+				td=document.createElement('td');
+				td.innerText=bookXmlNode.children[3].innerHTML;
+				row.appendChild(td);
+				td=document.createElement('td');
+				td.innerText=bookXmlNode.children[4].innerHTML;
+				row.appendChild(td);
+				tableBooks.children[1].appendChild[row];
+
+			})
+
+
+		})})
+</script>
+</html>
