@@ -110,6 +110,7 @@
 <div style="text-align: center;" ng-app="myApp" ng-controller="namesCtrl">
 
 <p>SEARCH FOR THE NEAREST HEADQUARTERS IN YOUR AREA:</p>
+<input type="number" step="1" ng-model="rowlimit">
 
 <p><input type="text" ng-model="test"></p>
 
@@ -145,6 +146,7 @@ $scope.names = [
 'VANCED',
 'POLAND'
 ];
+$scope.rowlimit=3;
 });
 </script>
 
